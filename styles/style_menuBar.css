@@ -1,0 +1,85 @@
+.items{
+    margin: 20px;
+    color: var(--base-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: var(--prototype);
+}
+
+
+.logo {
+    color: var(--primary-color);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.ico{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: var(--base-color);
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Escondemos el menú por defecto */
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--actionBar-color);
+        position: absolute; /* Para que se superponga */
+        top: 70px; /* Ajustar según el alto del nav */
+        right: 20px;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .menu li {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        
+    }
+
+    .menu i{
+        display: none; /*accedo a la clase .menu y al elemento i*/
+    }
+
+    .menu-icon {
+        display: block; /* Mostramos el ícono del menú */
+        margin-right: 20px;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex; /* Mostramos el menú cuando se chequea */
+    }
+}

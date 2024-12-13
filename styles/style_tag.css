@@ -1,0 +1,88 @@
+/*-------------------------------definiciones generales---------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main, footer{
+    padding: 20px;
+    text-align: center;
+}
+
+div{
+    display: grid;
+    min-height: 100hv;
+    grid-template-rows: auto 1fr auto
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color)
+}
+/*--------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------comienzo a estilizar-----------------------------------*/
+header{
+    /*background-image: url("https://horadecodar.com.br/wp-content/uploads/2023/04/Linguagem-HTML-1536x1024.jpg");*/
+    background-image: url('../images/fondo.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    background-color: #fbfbfb;
+}
+
+footer{
+    background-color: black;
+    height: 300px;
+}
+
+nav{
+    position: fixed;
+    width: 95%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+section {
+    height: 100vh; /*100vh ocupa todo la altura de la pantalla*/
+    align-items: flex-start;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*--------------------------------------------------------------------------------------*/

@@ -1,0 +1,71 @@
+@import url('../styles/variables.css');
+@import url('../styles/style_tag.css');
+@import url('../styles/style_menuBar.css');
+@import url('../styles/style_section-contacto.css');
+
+.titulo_{
+    font-family: var(--prototype);
+    font-size: 140px;
+    color: var(--subtitle-color);
+    margin-top: 40vh;
+    text-shadow: 10px 10px 10px rgba(63, 62, 62, 0.9);
+}
+
+@media (max-width: 768px){
+    .titulo_{
+        font-size: 70px;
+    }
+}
+
+.titulo_main{
+    font-family: var(--prototype);
+}
+
+
+.seccion-3{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.ima{
+    padding: 20%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.parrafo1{
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.parrafo2{
+    padding-left: 15%;
+    padding-right: 10%;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .seccion-3{
+        display: block;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+    .ima{
+        padding: 10%;
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+    }
+}

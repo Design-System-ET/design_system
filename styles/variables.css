@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Seven';
+    src: url('../fonts/Seven.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Prototype';
+    src: url('../fonts/Prototype.ttf');
+}
+
+:root{
+
+    /*COLORS*/
+    --primary-color: blue;
+    --secondary-color: red;
+    --base-color: white;
+    --actionBar-color: rgba(0, 0, 0, 0.5);
+    --subtitle-color: gray;
+
+
+    /*SIZES*/
+    
+
+    
+
+    /*FONTS*/
+    --seven: 'Seven', sans-serif;
+    --prototype: 'Prototype', sans-serif;
+}
